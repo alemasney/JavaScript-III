@@ -12,7 +12,7 @@
 // Principle 1
 
 // code example for Window Binding
-console.log(this);
+// console.log(this);
 
 // Principle 2
 
@@ -26,7 +26,7 @@ const about = {
     }
 }
 
-console.log(about.play());
+//console.log(about.play());
 
 // Principle 3
 
@@ -39,7 +39,7 @@ function PlayerHeight(height) {
 }
 
 const alan = new PlayerHeight('6 foot');
-console.log(alan.tall());
+//console.log(alan.tall());
 
 // Principle 4
 
@@ -58,4 +58,4 @@ function playerPositions(position1, position2, position3) {
 // playerPositions.call(player, positions[0], positions[1], positions[2]);
 // playerPositions.apply(player, positions);
 const newPlayer = playerPositions.bind(player, ...positions);
-console.log(newPlayer());
+//console.log(newPlayer());
